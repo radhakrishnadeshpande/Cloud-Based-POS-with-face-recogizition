@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 50vh;
+    background: #fff;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+h1{
+    font-family: sans-serif;
+    text-align: left;
+    font-size: 30px;
+    color: black;
+    background: skyblue;
+    
+}
+h2{
+    font-family: sans-serif;
+    font-size: 40px;
+    color: black;
+    font-style: italic;
+    text-align: center;
+    padding: 12px 34px;
+    margin: 8px 0;
+
+}
+.new{
+    text-align: center;
+     font-size: 20px;
+    color: bisque;
+}
+.new-user{
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+}
+.new-user:hover{
+    background: #04AA6D;
+    transition: 1s;
+}
+.existing{
+    text-align: center;
+     font-size: 20px;
+    color: #04AA6D;
+    
+}
+.existing-user{
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+   
+}
+.existing-user:hover{
+    background: #04AA6D;
+    opacity: 0.8;
+    transition: 1s;
+}
+
+/*-----capture------*/
+
+.capture1{
+    text-align: center;
+     font-size: 20px;
+    color: bisque;
+}
+.capture{
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    
+}
+.capture:hover{
+    background: orange;
+    transition: 1s;
+    opacity: 0.8;
+}
+.upload1{
+    text-align: center;
+     font-size: 20px;
+    color: orange;
+    
+}
+.upload{
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    
+}
+.upload:hover{
+    background: orange;
+    transition: 1s;
+}
+
+/*-------password------*/
+
+/*
+.password{
+    text-align: center;
+     font-size: 25px;
+    color: bisque;
+}
+.pass{
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    font-size: 50px;
+}
+.pass:hover{
+    background: pink;
+    transition: 0s;
+}
+*/
+.password{
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: orange;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/*---------uploaded--------*/
+
+h3{
+    text-align: center;
+    font-family: sans-serif;
+    color: forestgreen;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 100;
+}
+/*-------CAPTURING--------*/
+
+.capture12{
+    text-align: center;
+     font-size: 20px;
+}
+.capture11{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    
+}
+.capture11:hover{
+    background: orange;
+    transition: 1s;
+    opacity: 0.8;
+}
+
+
+.verify1{
+    text-align: center;
+     font-size: 20px;
+}
+.verify{
+
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    
+}
+.verify:hover{
+    background: orange;
+    transition: 1s;
+    opacity: 0.8;
+}
+
+/*--------payment------*/
+
+.password{
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=EnterAccountID] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=EnterAccountID]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+input[type=text], input[type=EnterAmount] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=EnterAmount]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+input[type=text], input[type=EnterCustomerPhoneno] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=EnterCustomerPhoneno]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.pay{
+  background-color: orange;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.pay:hover {
+  opacity:1;
+}
+
+

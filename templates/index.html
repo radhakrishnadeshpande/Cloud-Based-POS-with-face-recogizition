@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera</title>
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy@1.0.5/dist/webcam-easy.min.js"></script>
+<style>
+    a{
+        padding: 10px;
+        background-color: orange;
+        color: white;
+        text-decoration: none;
+    }
+    canvas{
+        display: none;
+    }
+    button{
+        cursor: pointer;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+</style>  
+    </head>
+<body>
+    <video id="webCam" autoplay playsinlne width="400" height="400"></video>
+    <canvas id="canvas"></canvas>
+    <img src=""  />
+    <br/>
+    <button download id="capture" onClick="takeAPicture()">capture</button>
+    
+    <form id="myAwesomeForm" method="post" action="{{ url_for('verify_image') }}">
+        <input type="text" id="filename" name="filename"  hidden/> <!-- Filename -->
+        <button type="submit" id="submit" hidden>Sumbit</button>
+    </form>
+    
+<script>
+    const webCamElement = document.getElementById("webCam");
+    const canvasElement = document.getElementById("canvas");
+    const webcam = new Webcam(webCamElement,"user",canvasElement);
+    webcam.start();
+    
+    function takeAPicture()
+    {   
+        let vcanvas=document.getElementById('webCam')
+        console.log(vcanvas.style.display)
+        if(vcanvas.style.display!=='none')
+        {
+        let picture =webcam.snap();
+        document.getElementById('webCam').style.display="none"
+        document.querySelector("img").src =picture;
+        document.querySelector("img").height = "400";
+        document.querySelector("img").width = "400";
+        document.getElementById("filename").value=picture;
+        document.getElementById("capture").innerHTML ="Recapture";
+        document.getElementById("submit").style.display="block"
+        }
+        else{
+         document.getElementById('webCam').style.display="block"
+         document.querySelector("img").src ="";
+         document.querySelector("img").height = "0";
+         document.querySelector("img").width = "0";
+         document.getElementById("capture").innerHTML ="capture";
+         document.getElementById("submit").style.display="none"
+        }
+
+    }
+   
+    
+</script>
+</body>
+</html>
